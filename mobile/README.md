@@ -43,7 +43,7 @@ make android    // only Android
 make mobile     // both iOS + Android
 ```
 
-Next clone this project `git clone https://github.com/lightninglabs/lightning-app` and copy the `lnd` mobile binaries over to their respective directories:
+Next clone this project `git clone https://github.com/Groestlcoin/lightning-app` and copy the `lnd` mobile binaries over to their respective directories:
 
 1. `lnd/mobile/build/ios/Lndmobile.framework` -> `lightning-app/mobile/ios/lightning`
 2. `lnd/mobile/build/android/Lndmobile.aar` -> `lightning-app/mobile/android/Lndmobile`
