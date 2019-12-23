@@ -15,11 +15,11 @@ if [ -z "$(eval "echo \$GH_TOKEN")" ]; then
   exit 1
 fi
 
-GITHUB_API_ENDPOINT="https://api.github.com/repos/lightninglabs/lightning-app/releases"
+GITHUB_API_ENDPOINT="https://api.github.com/repos/Groestlcoin/lightning-app/releases"
 CURRENT_TAG=v$(sed -n 's/.*"version": "\(.*\)".*/\1/p' ../../package.json)
 PREVIOUS_TAG=$(git describe --tags --abbrev=0 "$(git rev-list --tags --skip=1 --max-count=1)")
 RELEASE_NOTES="\\n# Release Notes\\n$(git log "${PREVIOUS_TAG}"..HEAD \
-  --merges --pretty='* %b [%h](http://github.com/lightninglabs/lightning-app/commit/%H)\n')"
+  --merges --pretty='* %b [%h](http://github.com/Groestlcoin/lightning-app/commit/%H)\n')"
 
 # get existing release from Github
 RELEASE=$(echo \
