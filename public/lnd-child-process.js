@@ -58,7 +58,7 @@ module.exports.startLndProcess = async function({
   if (!lndSettingsDir) throw new Error('lndSettingsDir not set!');
   const processName = 'lnd';
   let args = [
-    '--bitcoin.active',
+    '--groestlcoin.active',
     '--debuglevel=info',
     '--maxbackoff=2s',
     `--lnddir=${lndSettingsDir}`,
@@ -78,17 +78,17 @@ module.exports.startLndProcess = async function({
   // set development or production settings
   if (isDev) {
     args = args.concat([
-      '--bitcoin.simnet',
-      '--bitcoin.node=neutrino',
+      '--groestlcoin.simnet',
+      '--groestlcoin.node=neutrino',
       '--neutrino.connect=127.0.0.1:18555',
     ]);
   }
   // set default production settings if no custom flags
   if (!isDev && !lndArgs.length) {
     args = args.concat([
-      '--bitcoin.mainnet',
-      '--bitcoin.node=neutrino',
-      '--neutrino.addpeer=btcd-mainnet.lightning.computer',
+      '--groestlcoin.mainnet',
+      '--groestlcoin.node=neutrino',
+      '--neutrino.addpeer=grsd-mainnet.groestlcoin.org',
       '--neutrino.feeurl=https://nodes.lightning.computer/fees/v1/btc-fee-estimates.json',
       '--neutrino.assertfilterheader=230000:1308d5cfc6462f877a5587fd77d7c1ab029d45e58d5175aaf8c264cee9bde760',
     ]);
@@ -103,8 +103,8 @@ module.exports.startBtcdProcess = async function({
   btcdSettingsDir,
   miningAddress,
 }) {
-  if (!isDev) return; // don't start btcd if neutrino is used
-  const processName = 'btcd';
+  if (!isDev) return; // don't start grsd if neutrino is used
+  const processName = 'grsd';
   const args = [
     '--simnet',
     '--txindex',

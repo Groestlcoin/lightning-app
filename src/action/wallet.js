@@ -517,7 +517,7 @@ class WalletAction {
   }
 
   /**
-   * Fetch a new on-chain bitcoin address which can be used to fund the wallet
+   * Fetch a new on-chain groestlcoin address which can be used to fund the wallet
    * or receive an on-chain transaction from another user.
    * @return {Promise<undefined>}
    */

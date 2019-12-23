@@ -50,7 +50,7 @@ describe('Action File Mobile Unit Tests', () => {
   describe('get logsPath()', () => {
     it('should get log file path', () => {
       const path = file.logsPath;
-      expect(path, 'to equal', '/foo/bar/logs/bitcoin/mainnet/lnd.log');
+      expect(path, 'to equal', '/foo/bar/logs/groestlcoin/mainnet/lnd.log');
     });
   });
 
@@ -73,7 +73,7 @@ describe('Action File Mobile Unit Tests', () => {
       expect(
         RNFS.unlink,
         'was called with',
-        '/foo/bar/data/chain/bitcoin/mainnet/wallet.db'
+        '/foo/bar/data/chain/groestlcoin/mainnet/wallet.db'
       );
     });
 
@@ -90,7 +90,7 @@ describe('Action File Mobile Unit Tests', () => {
       expect(
         path,
         'to equal',
-        '/foo/bar/data/chain/bitcoin/mainnet/channel.backup'
+        '/foo/bar/data/chain/groestlcoin/mainnet/channel.backup'
       );
     });
   });

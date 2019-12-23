@@ -117,7 +117,7 @@ class PaymentAction {
 
   /**
    * Set the address input for the payment view. This can either be
-   * an on-chain bitcoin addres or an encoded lightning invoice.
+   * an on-chain groestlcoin addres or an encoded lightning invoice.
    * @param {string} options.address The payment address
    */
   setAddress({ address }) {
@@ -154,7 +154,7 @@ class PaymentAction {
 
   /**
    * Check if the address input provided by the user is either an on-chain
-   * bitcoin address or a lightning invoice. Depending on which type it is
+   * groestlcoin address or a lightning invoice. Depending on which type it is
    * the app will navigate to the corresponding payment view.
    * This action can be called from a view event handler as does all
    * the necessary error handling and notification display.
@@ -263,7 +263,7 @@ class PaymentAction {
   }
 
   /**
-   * Initialize the pay bitcoin confirm view by getting a fee estimate
+   * Initialize the pay groestlcoin confirm view by getting a fee estimate
    * from lnd and navigating to the view.
    * @return {Promise<undefined>}
    */
@@ -284,7 +284,7 @@ class PaymentAction {
 
   /**
    * Send the specified amount as an on-chain transaction to the provided
-   * bitcoin address and display a payment confirmation screen.
+   * groestlcoin address and display a payment confirmation screen.
    * This action can be called from a view event handler as does all
    * the necessary error handling and notification display.
    * @return {Promise<undefined>}

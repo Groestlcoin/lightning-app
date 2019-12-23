@@ -32,9 +32,9 @@ console.log(`
 
 const userDataPath = app.getPath('userData');
 const lndSettingsDir = path.join(isDev ? 'data' : userDataPath, 'lnd');
-const btcdSettingsDir = path.join(isDev ? 'data' : userDataPath, 'btcd');
+const btcdSettingsDir = path.join(isDev ? 'data' : userDataPath, 'grsd');
 const lndArgs = process.argv.filter(a =>
-  /(^--bitcoin)|(^--btcd)|(^--neutrino)/.test(a)
+  /(^--groestlcoin)|(^--grsd)|(^--neutrino)/.test(a)
 );
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -127,7 +127,7 @@ function createWindow() {
     lndPort: LND_PORT,
     network: isDev
       ? 'simnet'
-      : lndArgs.includes('--bitcoin.testnet')
+      : lndArgs.includes('--groestlcoin.testnet')
       ? 'testnet'
       : 'mainnet',
   });

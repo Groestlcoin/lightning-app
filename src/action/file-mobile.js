@@ -37,7 +37,7 @@ class FileAction {
    */
   get logsPath() {
     const { network } = this._store;
-    return `${this.lndDir}/logs/bitcoin/${network}/lnd.log`;
+    return `${this.lndDir}/logs/groestlcoin/${network}/lnd.log`;
   }
 
   /**
@@ -65,7 +65,7 @@ class FileAction {
    * @return {Promise<undefined>}
    */
   async deleteWalletDB(network) {
-    const path = `${this.lndDir}/data/chain/bitcoin/${network}/wallet.db`;
+    const path = `${this.lndDir}/data/chain/groestlcoin/${network}/wallet.db`;
     try {
       await this._FS.unlink(path);
     } catch (err) {
@@ -79,7 +79,7 @@ class FileAction {
 
   get scbPath() {
     const { network } = this._store;
-    return `${this.lndDir}/data/chain/bitcoin/${network}/channel.backup`;
+    return `${this.lndDir}/data/chain/groestlcoin/${network}/channel.backup`;
   }
 
   get scbExternalDir() {

@@ -16,13 +16,13 @@ class SettingAction {
   }
 
   /**
-   * Set the bitcoin unit that is to be displayed in the UI and
+   * Set the groestlcoin unit that is to be displayed in the UI and
    * perist the updated settings to disk.
-   * @param {string} options.unit The bitcoin unit e.g. `btc`
+   * @param {string} options.unit The groestlcoin unit e.g. `btc`
    */
   setBitcoinUnit({ unit }) {
     if (!UNITS[unit]) {
-      throw new Error(`Invalid bitcoin unit: ${unit}`);
+      throw new Error(`Invalid groestlcoin unit: ${unit}`);
     }
     this._store.settings.unit = unit;
     this._db.save();

@@ -36,7 +36,7 @@ function getMacaroonCreds(lndSettingsDir, network) {
     const metadata = new grpc.Metadata();
     const macaroonPath = path.join(
       lndSettingsDir,
-      `data/chain/bitcoin/${network}/admin.macaroon`
+      `data/chain/groestlcoin/${network}/admin.macaroon`
     );
     const macaroonHex = fs.readFileSync(macaroonPath).toString('hex');
     metadata.add('macaroon', macaroonHex);

@@ -19,7 +19,7 @@ class InfoAction {
   /**
    * Fetches the current details of the lnd node and sets the corresponding
    * store parameters. This api is polled at the beginning of app initialization
-   * until lnd has finished syncing the chain to the connected bitcoin full node.
+   * until lnd has finished syncing the chain to the connected groestlcoin full node.
    * @return {Promise<undefined>}
    */
   async getInfo() {
