@@ -1,13 +1,13 @@
 ## Start nodes via cli
 
 ```
-btcd --txindex --simnet --rpcuser=kek --rpcpass=kek --datadir=data/btcd/data --logdir=data/btcd/logs
+grsd --txindex --simnet --rpcuser=kek --rpcpass=kek --datadir=data/grsd/data --logdir=data/grsd/logs
 
-lnd --rpclisten=localhost:10006 --listen=localhost:10016 --restlisten=localhost:8086 --lnddir=data/lnd --debuglevel=info --bitcoin.simnet --bitcoin.active --bitcoin.node=neutrino --neutrino.connect=127.0.0.1:18555
+lnd --rpclisten=localhost:10006 --listen=localhost:10016 --restlisten=localhost:8086 --lnddir=data/lnd --debuglevel=info --groestlcoin.simnet --groestlcoin.active --groestlcoin.node=neutrino --neutrino.connect=127.0.0.1:18555
 
 lncli --network=simnet --rpcserver=localhost:10006 --lnddir=data/lnd create
 
-lnd --rpclisten=localhost:10002 --listen=localhost:10012 --restlisten=localhost:8002 --lnddir=data/lnd2 --debuglevel=info --bitcoin.simnet --bitcoin.active --bitcoin.node=neutrino --neutrino.connect=127.0.0.1:18555
+lnd --rpclisten=localhost:10002 --listen=localhost:10012 --restlisten=localhost:8002 --lnddir=data/lnd2 --debuglevel=info --groestlcoin.simnet --groestlcoin.active --groestlcoin.node=neutrino --neutrino.connect=127.0.0.1:18555
 
 lncli --network=simnet --rpcserver=localhost:10002 --lnddir=data/lnd2 create
 ```
@@ -17,9 +17,9 @@ lncli --network=simnet --rpcserver=localhost:10002 --lnddir=data/lnd2 create
 ```
 lncli --network=simnet --rpcserver=localhost:10006 --lnddir=data/lnd newaddress np2wkh
 
-btcd --txindex --simnet --rpcuser=kek --rpcpass=kek --datadir=data/btcd/data --logdir=data/btcd/logs --miningaddr=NEW_ADDRESS
+grsd --txindex --simnet --rpcuser=kek --rpcpass=kek --datadir=data/grsd/data --logdir=data/grsd/logs --miningaddr=NEW_ADDRESS
 
-btcctl --simnet --rpcuser=kek --rpcpass=kek generate 400
+grsctl --simnet --rpcuser=kek --rpcpass=kek generate 400
 ```
 
 ## Open channel and send payment

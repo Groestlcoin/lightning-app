@@ -41,7 +41,7 @@ deploy:
   script: ./assets/script/build_app.sh
   skip_cleanup: true
   on:
-    repo: lightninglabs/lightning-app
+    repo: Groestlcoin/lightning-app
     tags: true
 
 before_cache:
