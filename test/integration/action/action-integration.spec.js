@@ -346,7 +346,7 @@ describe('Action Integration Tests', function() {
       expect(store2.syncedToChain, 'to be true');
     });
 
-    it('should have no satoshis in channel balance', async () => {
+    it('should have no gros in channel balance', async () => {
       await updateBalances();
       expect(store1.balanceSatoshis, 'to be positive');
       expect(store2.balanceSatoshis, 'to be positive');
@@ -414,7 +414,7 @@ describe('Action Integration Tests', function() {
       expect(store1.computedChannels[0].status, 'to be', 'pending-open');
     });
 
-    it('should have enough satoshis in pending balance', async () => {
+    it('should have enough gros in pending balance', async () => {
       await updateBalances();
       expect(store1.pendingBalanceSatoshis, 'to be positive');
       expect(store2.pendingBalanceSatoshis, 'to be', 0);
@@ -430,7 +430,7 @@ describe('Action Integration Tests', function() {
       expect(store1.computedChannels[0].status, 'to be', 'open');
     });
 
-    it('should have enough satoshis in channel balance', async () => {
+    it('should have enough gros in channel balance', async () => {
       await updateBalances();
       expect(store1.pendingBalanceSatoshis, 'to be', 0);
       expect(store2.pendingBalanceSatoshis, 'to be', 0);
@@ -495,7 +495,7 @@ describe('Action Integration Tests', function() {
       expect(tx.status, 'to be', 'complete');
     });
 
-    it('should have satoshis in node2 channel balance after payment', async () => {
+    it('should have gros in node2 channel balance after payment', async () => {
       await updateBalances();
       expect(store2.channelBalanceSatoshis, 'to be', 100);
     });

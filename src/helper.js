@@ -53,10 +53,10 @@ export const parseDate = timeStamp => {
 };
 
 /**
- * Convert a string formatted btc/fiat amount to satoshis
+ * Convert a string formatted btc/fiat amount to gros
  * @param  {string} amount   The amount e.g. '0.0001'
  * @param  {Object} settings Contains the current exchange rate
- * @return {number}          The satoshis as an integer
+ * @return {number}          The gros as an integer
  */
 export const toSatoshis = (amount, settings) => {
   if (
@@ -76,7 +76,7 @@ export const toSatoshis = (amount, settings) => {
 };
 
 /**
- * Convert satoshis to a BTC values than can set as a text input value
+ * Convert gros to a BTC values than can set as a text input value
  * @param  {number} satoshis The value as a number
  * @param  {Object} settings Contains the current exchange rate
  * @return {string}          The amount formatted as '0.0001'
@@ -102,7 +102,7 @@ export const toAmount = (satoshis, settings, fiatPrecision = 8) => {
 
 /**
  * Calculate the current fiat currency rate for a satoshi input
- * @param  {number} satoshis The BTC amount in satoshis
+ * @param  {number} satoshis The BTC amount in gros
  * @param  {Object} settings Contains the current exchange rate
  * @return {string}          The locale formatted rate
  */
@@ -120,7 +120,7 @@ export const calculateExchangeRate = (satoshis, settings) => {
 /**
  * Convert a satoshi value either to fiat or the selected BTC unit.
  * The output should be used throughout the UI for value labels.
- * @param  {number} satoshis The BTC amount in satoshis
+ * @param  {number} satoshis The BTC amount in gros
  * @param  {Object} settings Contains the current exchange rate
  * @return {string}          The corresponding value label
  */
@@ -235,7 +235,7 @@ export const isLnUri = str => {
 };
 
 /**
- * Basic bitcoin address validation. More thorough matching is
+ * Basic groestlcoin address validation. More thorough matching is
  * done by lnd. This is just to mitigate XSS.
  * @param  {string}  str The address to validate
  * @return {boolean}     If the uri is valid

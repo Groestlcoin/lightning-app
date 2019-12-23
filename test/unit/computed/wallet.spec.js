@@ -67,8 +67,8 @@ describe('Computed Wallet Unit Tests', () => {
       expect(store.balanceLabel, 'to match', /500[,.]000[,.]01/);
       expect(store.totalBalanceSatoshis, 'to equal', 100010101);
       expect(store.totalBalanceLabel, 'to match', /1[,.]000[,.]101[,.]01/);
-      expect(store.unitFiatLabel, 'to equal', 'bits');
-      expect(store.unitLabel, 'to equal', 'bits');
+      expect(store.unitFiatLabel, 'to equal', 'groestls');
+      expect(store.unitLabel, 'to equal', 'groestls');
     });
 
     it('should have red input if password is too short', () => {

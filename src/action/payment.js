@@ -203,7 +203,7 @@ class PaymentAction {
    * Estimate the lightning transaction fee using the queryRoutes grpc api
    * after which the fee is set in the store.
    * @param  {string} options.destination The lnd node that is to be payed
-   * @param  {number} options.satAmt      The amount to be payed in satoshis
+   * @param  {number} options.satAmt      The amount to be payed in gros
    * @return {Promise<undefined>}
    */
   async estimateLightningFee({ destination, satAmt }) {

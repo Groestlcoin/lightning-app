@@ -269,7 +269,7 @@ class ChannelAction {
    * Open a channel to a peer without advertising it and update channel
    * state on data event from the streaming grpc api.
    * @param  {string} options.pubkey The public key of the peer
-   * @param  {number} options.amount The amount in satoshis to fund the channel
+   * @param  {number} options.amount The amount in gros to fund the channel
    * @return {Promise<undefined>}
    */
   async openChannel({ pubkey, amount }) {

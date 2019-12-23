@@ -14,7 +14,7 @@ describe('Computed Settings Unit Tests', () => {
       expect(
         store.selectedUnitLabel,
         'to match',
-        /Satoshi {3}\(0[,.]00000001 BTC\)/
+        /Gro {3}\(0[,.]00000001 GRS\)/
       );
       expect(store.selectedFiatLabel, 'to equal', 'US Dollar');
       expect(store.satUnitLabel, 'to be ok');
@@ -25,10 +25,10 @@ describe('Computed Settings Unit Tests', () => {
       expect(store.gbpFiatLabel, 'to be ok');
     });
 
-    it('should display satoshis denominated in BTC', () => {
+    it('should display gros denominated in BTC', () => {
       store.settings.unit = 'btc';
       ComputedSetting(store);
-      expect(store.selectedUnitLabel, 'to equal', 'Bitcoin');
+      expect(store.selectedUnitLabel, 'to equal', 'Groestlcoin');
     });
   });
 });

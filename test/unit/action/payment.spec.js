@@ -309,7 +309,7 @@ describe('Action Payments Unit Tests', () => {
       expect(nav.goPayLightningConfirm, 'was called once');
     });
 
-    it('should notify if not bitcoin address', async () => {
+    it('should notify if not groestlcoin address', async () => {
       store.payment.address = 'some-address';
       payment.decodeInvoice.resolves(false);
       await payment.checkType();

@@ -216,7 +216,7 @@ describe('Helpers Unit Tests', () => {
       expect(num, 'to equal', 1);
     });
 
-    it('should round up to two satoshis', () => {
+    it('should round up to two gros', () => {
       const num = helpers.toSatoshis('0.000000019', settings);
       expect(num, 'to equal', 2);
     });
@@ -253,7 +253,7 @@ describe('Helpers Unit Tests', () => {
       };
     });
 
-    it('should throw error if satoshis is undefined', () => {
+    it('should throw error if gros is undefined', () => {
       expect(
         helpers.toAmount.bind(null, undefined, settings),
         'to throw',
@@ -261,7 +261,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is null', () => {
+    it('should throw error if gros is null', () => {
       expect(
         helpers.toAmount.bind(null, null, settings),
         'to throw',
@@ -269,7 +269,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is not a number', () => {
+    it('should throw error if gros is not a number', () => {
       expect(
         helpers.toAmount.bind(null, 'not-a-number', settings),
         'to throw',
@@ -408,7 +408,7 @@ describe('Helpers Unit Tests', () => {
       };
     });
 
-    it('should throw error if satoshis is undefined', () => {
+    it('should throw error if gros is undefined', () => {
       expect(
         helpers.calculateExchangeRate.bind(null, undefined, settings),
         'to throw',
@@ -416,7 +416,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is null', () => {
+    it('should throw error if gros is null', () => {
       expect(
         helpers.calculateExchangeRate.bind(null, null, settings),
         'to throw',
@@ -424,7 +424,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is string', () => {
+    it('should throw error if gros is string', () => {
       expect(
         helpers.calculateExchangeRate.bind(null, '100000', settings),
         'to throw',
@@ -480,7 +480,7 @@ describe('Helpers Unit Tests', () => {
       };
     });
 
-    it('should throw error if satoshis is undefined for fiat', () => {
+    it('should throw error if gros is undefined for fiat', () => {
       expect(
         helpers.toAmountLabel.bind(null, undefined, settings),
         'to throw',
@@ -488,7 +488,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is null for fiat', () => {
+    it('should throw error if gros is null for fiat', () => {
       expect(
         helpers.toAmountLabel.bind(null, null, settings),
         'to throw',
@@ -496,7 +496,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is empty for fiat', () => {
+    it('should throw error if gros is empty for fiat', () => {
       expect(
         helpers.toAmountLabel.bind(null, '', settings),
         'to throw',
@@ -504,7 +504,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is undefined for amount', () => {
+    it('should throw error if gros is undefined for amount', () => {
       settings.displayFiat = false;
       expect(
         helpers.toAmountLabel.bind(null, undefined, settings),
@@ -513,7 +513,7 @@ describe('Helpers Unit Tests', () => {
       );
     });
 
-    it('should throw error if satoshis is string value', () => {
+    it('should throw error if gros is string value', () => {
       settings.displayFiat = false;
       expect(
         helpers.toAmountLabel.bind(null, '100000', settings),

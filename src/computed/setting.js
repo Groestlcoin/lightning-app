@@ -37,7 +37,7 @@ const ComputedSetting = store => {
 
 const getUnitLabel = type => {
   const unit = UNITS[type];
-  if (unit.display === 'BTC') {
+  if (unit.display === 'GRS') {
     return unit.displayLong;
   }
   const denominator = formatNumber(unit.denominator / UNITS.btc.denominator);

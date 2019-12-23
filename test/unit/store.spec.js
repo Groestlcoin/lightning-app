@@ -8,10 +8,10 @@ describe('Store Unit Tests', () => {
   });
 
   describe('init()', () => {
-    it('should set computed vales', () => {
+    it('should set computed values', () => {
       expect(store.unitFiatLabel, 'to be', undefined);
       store.init();
-      expect(store.unitFiatLabel, 'to equal', 'sats');
+      expect(store.unitFiatLabel, 'to equal', 'gros');
     });
   });
 });
