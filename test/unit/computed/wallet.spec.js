@@ -33,7 +33,7 @@ describe('Computed Wallet Unit Tests', () => {
       expect(
         store.walletAddressUri,
         'to equal',
-        'bitcoin:ra2XT898gWTp9q2DwMgtwMJsUEh3oMeS4K'
+        'groestlcoin:ra2XT898gWTp9q2DwMgtwMJsUEh3oMeS4K'
       );
     });
 

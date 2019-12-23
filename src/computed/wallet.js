@@ -14,7 +14,7 @@ import {
 const ComputedWallet = store => {
   extendObservable(store, {
     get walletAddressUri() {
-      return store.walletAddress ? `bitcoin:${store.walletAddress}` : '';
+      return store.walletAddress ? `groestlcoin:${store.walletAddress}` : '';
     },
     get balanceLabel() {
       return toAmountLabel(store.confirmedBalanceSatoshis, store.settings);

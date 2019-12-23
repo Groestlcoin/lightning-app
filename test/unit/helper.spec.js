@@ -700,13 +700,13 @@ describe('Helpers Unit Tests', () => {
       expect(helpers.isLnUri(uri), 'to be', true);
     });
 
-    it('should reject bitcoin uri', () => {
-      const uri = 'bitcoin:rfu4i1Mo2NF7TQsN9bMVLFSojSzcyQCEH5';
+    it('should reject groestlcoin uri', () => {
+      const uri = 'groestlcoin:FrXe5XtWPVhJgot7WYm5KLzyYShohfCWHp';
       expect(helpers.isLnUri(uri), 'to be', false);
     });
 
-    it('should reject bitcoin address', () => {
-      const uri = 'rfu4i1Mo2NF7TQsN9bMVLFSojSzcyQCEH5';
+    it('should reject groestlcoin address', () => {
+      const uri = 'FrXe5XtWPVhJgot7WYm5KLzyYShohfCWHp';
       expect(helpers.isLnUri(uri), 'to be', false);
     });
 
@@ -724,8 +724,8 @@ describe('Helpers Unit Tests', () => {
   });
 
   describe('isAddress()', () => {
-    it('should accept bitcoin address', () => {
-      const address = 'rfu4i1Mo2NF7TQsN9bMVLFSojSzcyQCEH5';
+    it('should accept groestlcoin address', () => {
+      const address = 'FrXe5XtWPVhJgot7WYm5KLzyYShohfCWHp';
       expect(helpers.isAddress(address), 'to be', true);
     });
 
@@ -740,7 +740,7 @@ describe('Helpers Unit Tests', () => {
       expect(helpers.isAddress(address), 'to be', true);
     });
 
-    it('should reject invalid bitcoin address', () => {
+    it('should reject invalid groestlcoin address', () => {
       const address = '/INVALID/rfu4i1Mo2NF7TQsN9bMVLFSoj';
       expect(helpers.isAddress(address), 'to be', false);
     });
