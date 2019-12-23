@@ -99,11 +99,11 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "engineering.lightning.LightningApp"
+        applicationId "org.groestlcoin.LightningApp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy 'react-native-camera', 'general'
-        versionCode 37
+        versionCode 370
         versionName "0.2.0"
     }
     splits {
