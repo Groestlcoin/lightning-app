@@ -113,7 +113,7 @@
       "icon": "assets/app-icon/desktop.ico",
       "target": "nsis"
     },
-    "productName": "GRS-Lightning",
+    "productName": "GRS Lightning",
     "files": [
       "build/**/*",
       "node_modules/**/*",
