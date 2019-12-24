@@ -1,6 +1,6 @@
 {
   "name": "LightningApp",
-  "displayName": "Lightning",
+  "displayName": "GRS Lightning",
   "expo": {
     "sdkVersion": "33.0.0"
   }
