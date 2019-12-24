@@ -89,8 +89,6 @@ module.exports.startLndProcess = async function({
       '--groestlcoin.mainnet',
       '--groestlcoin.node=neutrino',
       '--neutrino.addpeer=grsd-mainnet.groestlcoin.org',
-      '--neutrino.feeurl=https://nodes.lightning.computer/fees/v1/btc-fee-estimates.json',
-      '--neutrino.assertfilterheader=230000:1308d5cfc6462f877a5587fd77d7c1ab029d45e58d5175aaf8c264cee9bde760',
     ]);
   }
   args = args.concat(lndArgs);
@@ -118,7 +116,7 @@ module.exports.startBtcdProcess = async function({
 };
 
 module.exports.mineBlocks = async function({ blocks, logger }) {
-  const processName = 'btcctl';
+  const processName = 'grsctl';
   const args = [
     '--simnet',
     '--rpcuser=kek',

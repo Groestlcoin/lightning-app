@@ -39,7 +39,7 @@ const PayBitcoinView = ({ store, nav, payment }) => (
   <Background color={color.orange}>
     <Header color={color.orange}>
       <BackButton onPress={() => nav.goPay()} />
-      <Title title="Bitcoin Payment">
+      <Title title="Groestlcoin Payment">
         <BitcoinIcon height={13.6} width={10.8} />
       </Title>
       <CancelButton onPress={() => nav.goHome()} />
@@ -68,7 +68,7 @@ const PayBitcoinView = ({ store, nav, payment }) => (
             onPress={() => payment.toggleMax()}
           />
           <InputField
-            placeholder="Bitcoin Address"
+            placeholder="Groestlcoin Address"
             value={store.payment.address}
             onChangeText={address => payment.setAddress({ address })}
             onSubmitEditing={() => payment.initPayBitcoinConfirm()}

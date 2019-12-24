@@ -69,7 +69,7 @@ const PayBitcoinView = ({ store, nav, payment }) => (
             onPress={() => payment.toggleMax()}
           />
           <InputField
-            placeholder="Bitcoin Address"
+            placeholder="Groestlcoin Address"
             value={store.payment.address}
             onChangeText={address => payment.setAddress({ address })}
             onSubmitEditing={() => payment.initPayBitcoinConfirm()}

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# create empty grsd.conf for btcctl
+# create empty grsd.conf for grsctl
 if [ "$(uname)" == "Darwin" ]; then
   PLATFORM="darwin"
   mkdir $HOME/Library/Application\ Support/Grsd && touch $HOME/Library/Application\ Support/Grsd/grsd.conf

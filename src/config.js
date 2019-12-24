@@ -35,7 +35,7 @@ module.exports.RECOVERY_WINDOW = 250;
 
 module.exports.UNITS = {
   sat: { display: 'gros', displayLong: 'Gro', denominator: 1 },
-  bit: { display: 'groestls', displayLong: 'Groestl', denominator: 100 },
+  bit: { display: 'groestls', displayLong: 'Groestls', denominator: 100 },
   btc: { display: 'GRS', displayLong: 'Groestlcoin', denominator: 100000000 },
 };
 module.exports.FIATS = {

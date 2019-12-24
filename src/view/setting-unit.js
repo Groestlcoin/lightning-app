@@ -16,7 +16,7 @@ const SettingUnitView = ({ store, nav, setting }) => {
     <Background color={color.blackDark}>
       <Header separator>
         <BackButton onPress={() => nav.goSettings()} />
-        <Title title="Bitcoin Units" />
+        <Title title="Groestlcoin Units" />
         <Button disabled onPress={() => {}} />
       </Header>
       <SettingContent>

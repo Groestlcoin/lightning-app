@@ -57,7 +57,7 @@ const SettingView = ({ store, nav, wallet, autopilot, auth }) => {
           <CountBubble>{store.notificationCountLabel}</CountBubble>
         </SettingItem>
         <SettingItem
-          name="Bitcoin Unit"
+          name="Groestlcoin Unit"
           label={store.selectedUnitLabel}
           onSelect={() => nav.goSettingsUnit()}
           arrow

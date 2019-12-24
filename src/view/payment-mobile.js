@@ -82,18 +82,18 @@ const PaymentCard = ({ store, payment }) => (
   <MainContent>
     <Card>
       <FormText>
-        Paste the Lightning Payment Request or the Bitcoin Address to which
+        Paste the Lightning Payment Request or the Groestlcoin Address to which
         you’re sending.
       </FormText>
       <FormStretcher>
         <InputField
-          placeholder="Payment Request / Bitcoin Address"
+          placeholder="Payment Request / Groestlcoin Address"
           value={store.payment.address}
           onChangeText={address => payment.setAddress({ address })}
           onSubmitEditing={() => payment.checkType()}
         />
         <FormSubText style={cardStyles.subText}>
-          Only Lightning Payment Requests or Bitcoin addresses will work at this
+          Only Lightning Payment Requests or Groestlcoin addresses will work at this
           time.
         </FormSubText>
       </FormStretcher>

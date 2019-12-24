@@ -31,7 +31,7 @@ lncli --network=simnet --rpcserver=localhost:10006 --lnddir=data/lnd connect PUB
 
 lncli --network=simnet --rpcserver=localhost:10006 --lnddir=data/lnd openchannel --node_key=PUB_KEY --local_amt=16000000
 
-btcctl --simnet --rpcuser=kek --rpcpass=kek generate 6
+grsctl --simnet --rpcuser=kek --rpcpass=kek generate 6
 
 lncli --network=simnet --rpcserver=localhost:10006 --lnddir=data/lnd listchannels
 
