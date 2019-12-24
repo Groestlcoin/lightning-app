@@ -72,7 +72,7 @@ cp $GOPATH/bin/lnd ./assets/bin/darwin
 npm run electron-pack
 ```
 
-The packaged app will then be available in the `dist` directory. The packaged version of the app will run on Bitcoin mainnet.
+The packaged app will then be available in the `dist` directory. The packaged version of the app will run on Groestlcoin mainnet.
 
 ### Starting the Packaged App (light client)
 

@@ -48,7 +48,7 @@ const DepositView = ({ store, nav, invoice }) => (
     <MainContent style={styles.content}>
       <CopyText style={styles.copyTxt}>
         Scan the QR code, or copy the address to send from another wallet or
-        exchange. Only Bitcoin works at the moment.
+        exchange. Only Groestlcoin works at the moment.
       </CopyText>
       <View style={styles.btnWrapper}>
         <CopyButton
