@@ -555,7 +555,10 @@ class WalletAction {
       const response = checkHttpStatus(await fetch(uri));
       const tickers = (await response.json()).tickers;
       const rate = tickers.find(t => t.ticker.toLowerCase() === fiat).rate;
-      this._store.settings.exchangeRate[fiat] = 100 / rate;
+      const uriGRS ='https://api.coingecko.com/api/v3/simple/price?ids=groestlcoin&vs_currencies=btc';
+      const responseGRS = checkHttpStatus(await fetch(uriGRS));
+      const rateGRS = (await responseGRS.json()).groestlcoin.btc;
+      this._store.settings.exchangeRate[fiat] = 100 / (rate * rateGRS);
       this._db.save();
     } catch (err) {
       log.error('Getting exchange rate failed', err);
