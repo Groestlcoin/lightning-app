@@ -317,8 +317,8 @@ describe('Action Payments Unit Tests', () => {
       expect(notification.display, 'was called once');
     });
 
-    it('should navigate to bitcoin for valid address', async () => {
-      store.payment.address = 'rfu4i1Mo2NF7TQsN9bMVLFSojSzcyQCEH5';
+    it('should navigate to groestlcoin for valid address', async () => {
+      store.payment.address = 'FrXe5XtWPVhJgot7WYm5KLzyYShohfCWHp';
       payment.decodeInvoice.resolves(false);
       await payment.checkType();
       expect(nav.goPayBitcoin, 'was called once');
