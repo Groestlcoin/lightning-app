@@ -17,7 +17,7 @@ const ComputedTransaction = store => {
       all.forEach((t, i) => {
         t.key = String(i);
         t.idName = t.type === 'bitcoin' ? 'Transaction ID' : 'Invoice ID';
-        t.typeLabel = toCaps(t.type);
+        t.typeLabel = t.type === 'bitcoin' ? 'Groestlcoin' : toCaps(t.type);
         t.statusLabel = toCaps(t.status);
         t.dateLabel = t.date.toLocaleDateString();
         t.dateTimeLabel = t.date.toLocaleString();

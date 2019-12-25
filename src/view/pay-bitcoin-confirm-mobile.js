@@ -48,7 +48,7 @@ const PayBitcoinConfirmView = ({ store, nav, payment }) => (
   <Background color={color.orange}>
     <Header color={color.orange}>
       <BackButton onPress={() => nav.goPayBitcoin()} />
-      <Title title="Bitcoin Payment">
+      <Title title="Groestlcoin Payment">
         <BitcoinIcon height={13.6} width={10.8} />
       </Title>
       <CancelButton onPress={() => nav.goHome()} />
@@ -56,7 +56,8 @@ const PayBitcoinConfirmView = ({ store, nav, payment }) => (
     <MainContent>
       <Card>
         <FormText style={styles.description}>
-          You are about to send a Bitcoin payment on-chain.
+          You are about to send a       <Title title="Groestlcoin Payment">
+ payment on-chain.
         </FormText>
         <FormStretcher>
           <BalanceLabel style={styles.balance}>
