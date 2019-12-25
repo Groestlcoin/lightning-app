@@ -17,7 +17,7 @@ const SvgShieldDots = props => (
       </LinearGradient>
     </Defs>
     <G fill="none" fillRule="evenodd">
-      <G transform="translate(-.282 .423)" fill="#57038D">
+      <G transform="translate(-.282 .423)" fill="#008BA4">
         <Circle cx={8.479} cy={110.908} r={7.865} />
         <Circle cx={257.324} cy={86.311} r={7.865} />
         <Circle cx={48.465} cy={234.982} r={7.865} />

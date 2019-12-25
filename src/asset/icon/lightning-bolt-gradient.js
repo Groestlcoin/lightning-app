@@ -4,8 +4,8 @@ const LightningBoltGradient = props => (
   <Svg viewBox="0 0 95 172" width="1em" height="1em" {...props}>
     <Defs>
       <LinearGradient x1="23.555%" y1="100%" x2="77.972%" y2="0%" id="a">
-        <Stop stopColor="#A540CD" offset="0%" />
-        <Stop stopColor="#6B249C" offset="100%" />
+        <Stop stopColor="#00A5BD" offset="0%" />
+        <Stop stopColor="#006593" offset="100%" />
       </LinearGradient>
     </Defs>
     <Path

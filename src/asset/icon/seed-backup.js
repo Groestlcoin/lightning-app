@@ -17,16 +17,16 @@ const SvgSeedBackup = props => (
       />
     </Defs>
     <G fill="none" fillRule="evenodd">
-      <Circle fill="#57038D" cx={15.141} cy={47.771} r={6.374} />
-      <Circle fill="#57038D" cx={214.172} cy={68.162} r={6.374} />
-      <Circle fill="#57038D" cx={7.287} cy={175.945} r={6.374} />
-      <Circle fill="#57038D" cx={196.958} cy={212} r={10.841} />
-      <Circle fill="#57038D" cx={175.276} cy={14.119} r={10.841} />
-      <Circle fill="#57038D" cx={135.927} cy={8.951} r={2.725} />
-      <Circle fill="#57038D" cx={25.538} cy={3.5} r={2.725} />
-      <Circle fill="#57038D" cx={194.233} cy={160.157} r={2.725} />
-      <Circle fill="#57038D" cx={16.386} cy={143.223} r={2.725} />
-      <Circle fill="#57038D" cx={71.296} cy={7.745} r={6.374} />
+      <Circle fill="#008BA4" cx={15.141} cy={47.771} r={6.374} />
+      <Circle fill="#008BA4" cx={214.172} cy={68.162} r={6.374} />
+      <Circle fill="#008BA4" cx={7.287} cy={175.945} r={6.374} />
+      <Circle fill="#008BA4" cx={196.958} cy={212} r={10.841} />
+      <Circle fill="#008BA4" cx={175.276} cy={14.119} r={10.841} />
+      <Circle fill="#008BA4" cx={135.927} cy={8.951} r={2.725} />
+      <Circle fill="#008BA4" cx={25.538} cy={3.5} r={2.725} />
+      <Circle fill="#008BA4" cx={194.233} cy={160.157} r={2.725} />
+      <Circle fill="#008BA4" cx={16.386} cy={143.223} r={2.725} />
+      <Circle fill="#008BA4" cx={71.296} cy={7.745} r={6.374} />
       <Path
         d="M61 46.081h106.16c7.733 0 14 6.268 14 14v134.135c0 7.732-6.267 14-14 14H61c-7.731 0-14-6.268-14-14V60.08c0-7.732 6.269-14 14-14z"
         fillOpacity={0.168}

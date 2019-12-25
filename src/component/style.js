@@ -10,13 +10,13 @@ export const color = {
   greyPlaceholder: 'rgba(74,74,74,0.5)',
   greyBorder: '#6B6969',
   greyLight: '#D7D4D4',
-  purple: '#57038D',
-  lightPurple: '#A540CD',
-  loadNetworkLightPurple: '#A95BDC',
-  loadNetworkMedPurple: '#651399',
-  loadNetworkMedDarkPurple: '#610F96',
-  openChansDarkPurple: '#6B249C',
-  orange: '#F66B1C',
+  purple: '#005E78',
+  lightPurple: '#00A5BD',
+  loadNetworkLightPurple: '#00A9BD',
+  loadNetworkMedPurple: '#006593',
+  loadNetworkMedDarkPurple: '#00618F',
+  openChansDarkPurple: '#006593',
+  orange: '#005E78',
   blackDark: '#252F4A',
   blackText: '#4A4A4A',
   greenSig: '#46E80E',
@@ -33,6 +33,10 @@ export const color = {
   cliBackground: '#171D2C',
   green: '#46E80E',
   red: 'red',
+  grs: '#005E78',
+  grsMedDark: '#00618F',
+  grsMed: '#006593',
+  grsLight: '#00A5BD'
 };
 
 export const font = {

@@ -14,17 +14,17 @@ const CopyPurple = props => (
     </Defs>
     <G fill="none" fillRule="evenodd">
       <G transform="translate(2 2)">
-        <Use fill="#57038D" href="#a" />
+        <Use fill="#008BA4" href="#a" />
         <Path
-          stroke="#A540CD"
+          stroke="#00A5BD"
           strokeWidth={2}
           d="M-.87-.772h12.302v16.248H-.87z"
         />
       </G>
       <G transform="translate(2 2)">
-        <Use fill="#57038D" href="#b" />
+        <Use fill="#008BA4" href="#b" />
         <Path
-          stroke="#A540CD"
+          stroke="#00A5BD"
           strokeWidth={2}
           d="M3.314 4.606h12.302v16.248H3.314z"
         />

@@ -6,18 +6,18 @@
     <defs>
         <rect id="path-1" x="0" y="0" width="1440" height="985"></rect>
         <linearGradient x1="3.90142632%" y1="4.66974347%" x2="78.3900788%" y2="75.4779882%" id="linearGradient-3">
-            <stop stop-color="#A95BDC" offset="0%"></stop>
-            <stop stop-color="#651399" offset="51.5755742%"></stop>
-            <stop stop-color="#610F96" offset="70.3015434%"></stop>
-            <stop stop-color="#610F96" offset="70.3015434%"></stop>
-            <stop stop-color="#57038D" offset="100%"></stop>
+            <stop stop-color="#00A5BD" offset="0%"></stop>
+            <stop stop-color="#006593" offset="51.5755742%"></stop>
+            <stop stop-color="#00618F" offset="70.3015434%"></stop>
+            <stop stop-color="#00618F" offset="70.3015434%"></stop>
+            <stop stop-color="#005E78" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="-6.4709114%" y1="-1.00006949%" x2="87.8201134%" y2="84.6960773%" id="linearGradient-4">
-            <stop stop-color="#A95BDC" offset="0%"></stop>
-            <stop stop-color="#651399" offset="51.5755742%"></stop>
-            <stop stop-color="#610F96" offset="70.3015434%"></stop>
-            <stop stop-color="#610F96" offset="70.3015434%"></stop>
-            <stop stop-color="#57038D" offset="100%"></stop>
+            <stop stop-color="#00A5BD" offset="0%"></stop>
+            <stop stop-color="#006593" offset="51.5755742%"></stop>
+            <stop stop-color="#00618F" offset="70.3015434%"></stop>
+            <stop stop-color="#00618F" offset="70.3015434%"></stop>
+            <stop stop-color="#005E78" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Onboarding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

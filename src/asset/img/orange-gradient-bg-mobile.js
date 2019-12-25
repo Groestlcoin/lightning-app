@@ -11,8 +11,8 @@ const SvgOrangeGradientBgMobile = props => (
         y2="55.702%"
         id="a"
       >
-        <Stop stopColor="#FAD961" offset="0%" />
-        <Stop stopColor="#F76B1C" offset="100%" />
+        <Stop stopColor="#00A5BD" offset="0%" />
+        <Stop stopColor="#005E78" offset="100%" />
       </LinearGradient>
     </Defs>
     <Path d="M0 0h600v1000H0z" fill="url(#a)" fillRule="evenodd" />

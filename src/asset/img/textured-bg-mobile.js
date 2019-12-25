@@ -19,18 +19,18 @@ const TexturedBgMobile = props => (
     <Defs>
       <Path id="a" d="M0 0h1440v985H0z" />
       <LinearGradient x1="3.901%" y1="4.67%" x2="78.39%" y2="75.478%" id="c">
-        <Stop stopColor="#A95BDC" offset="0%" />
-        <Stop stopColor="#651399" offset="51.576%" />
-        <Stop stopColor="#610F96" offset="70.302%" />
-        <Stop stopColor="#610F96" offset="70.302%" />
-        <Stop stopColor="#57038D" offset="100%" />
+        <Stop stopColor="#00A5BD" offset="0%" />
+        <Stop stopColor="#006593" offset="51.576%" />
+        <Stop stopColor="#00618F" offset="70.302%" />
+        <Stop stopColor="#00618F" offset="70.302%" />
+        <Stop stopColor="#005E78" offset="100%" />
       </LinearGradient>
       <LinearGradient x1="-6.471%" y1="-1%" x2="87.82%" y2="84.696%" id="d">
-        <Stop stopColor="#A95BDC" offset="0%" />
-        <Stop stopColor="#651399" offset="51.576%" />
-        <Stop stopColor="#610F96" offset="70.302%" />
-        <Stop stopColor="#610F96" offset="70.302%" />
-        <Stop stopColor="#57038D" offset="100%" />
+        <Stop stopColor="#00A5BD" offset="0%" />
+        <Stop stopColor="#006593" offset="51.576%" />
+        <Stop stopColor="#00618F" offset="70.302%" />
+        <Stop stopColor="#00618F" offset="70.302%" />
+        <Stop stopColor="#005E78" offset="100%" />
       </LinearGradient>
     </Defs>
     <G fill="none" fillRule="evenodd">

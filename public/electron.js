@@ -81,7 +81,7 @@ function createWindow() {
   const options = {
     width: 880,
     height: 635,
-    backgroundColor: '#57038D',
+    backgroundColor: '#008BA4',
     icon: path.join(
       __dirname,
       '..',

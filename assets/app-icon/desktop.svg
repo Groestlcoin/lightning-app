@@ -5,11 +5,11 @@
     <desc>Created with sketchtool.</desc>
     <defs>
         <linearGradient x1="-6.4709114%" y1="-1.00006949%" x2="87.8201134%" y2="84.6960773%" id="linearGradient-1">
-            <stop stop-color="#A95BDC" offset="0%"></stop>
-            <stop stop-color="#651399" offset="51.5755742%"></stop>
-            <stop stop-color="#610F96" offset="70.3015434%"></stop>
-            <stop stop-color="#610F96" offset="70.3015434%"></stop>
-            <stop stop-color="#57038D" offset="100%"></stop>
+            <stop stop-color="#00A5BD" offset="0%"></stop>
+            <stop stop-color="#006593" offset="51.5755742%"></stop>
+            <stop stop-color="#00618F" offset="70.3015434%"></stop>
+            <stop stop-color="#00618F" offset="70.3015434%"></stop>
+            <stop stop-color="#005E78" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="App-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
