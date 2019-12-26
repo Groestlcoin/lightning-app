@@ -56,8 +56,7 @@ const PayBitcoinConfirmView = ({ store, nav, payment }) => (
     <MainContent>
       <Card>
         <FormText style={styles.description}>
-          You are about to send a       <Title title="Groestlcoin Payment">
- payment on-chain.
+          You are about to send a Groestlcoin payment on-chain.
         </FormText>
         <FormStretcher>
           <BalanceLabel style={styles.balance}>
