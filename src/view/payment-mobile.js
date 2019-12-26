@@ -93,8 +93,8 @@ const PaymentCard = ({ store, payment }) => (
           onSubmitEditing={() => payment.checkType()}
         />
         <FormSubText style={cardStyles.subText}>
-          Only Lightning Payment Requests or Groestlcoin addresses will work at this
-          time.
+          Only Lightning Payment Requests or Groestlcoin addresses will work at
+          this time.
         </FormSubText>
       </FormStretcher>
     </Card>

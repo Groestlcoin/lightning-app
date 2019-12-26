@@ -36,7 +36,7 @@ export const color = {
   grs: '#005E78',
   grsMedDark: '#00618F',
   grsMed: '#006593',
-  grsLight: '#00A5BD'
+  grsLight: '#00A5BD',
 };
 
 export const font = {

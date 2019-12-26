@@ -89,7 +89,7 @@ module.exports.startLndProcess = async function({
       '--groestlcoin.mainnet',
       '--groestlcoin.node=neutrino',
       '--neutrino.addpeer=grsd-mainnet.groestlcoin.org',
-      '--neutrino.feeurl=https://groestlcoin.org/grs-fee-estimates.json'
+      '--neutrino.feeurl=https://groestlcoin.org/grs-fee-estimates.json',
     ]);
   }
   args = args.concat(lndArgs);

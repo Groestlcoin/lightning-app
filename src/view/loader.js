@@ -43,7 +43,9 @@ const LoaderView = () => (
   <Background color={color.blackDark}>
     <MainContent style={styles.content}>
       <View style={styles.copy}>
-        <CopyOnboardText>The fastest way to transfer Groestlcoin.</CopyOnboardText>
+        <CopyOnboardText>
+          The fastest way to transfer Groestlcoin.
+        </CopyOnboardText>
         <CopyOnboardText style={styles.copy2}>
           The most advanced easy-to-use wallet.
         </CopyOnboardText>

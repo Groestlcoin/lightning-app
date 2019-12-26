@@ -49,7 +49,7 @@ describe('Computed Transactions Unit Tests', () => {
       expect(store.computedTransactions.length, 'to equal', 3);
       const tx = store.computedTransactions.find(t => t.id === '0');
       expect(tx.idName, 'to equal', 'Transaction ID');
-      expect(tx.typeLabel, 'to equal', 'Bitcoin');
+      expect(tx.typeLabel, 'to equal', 'Groestlcoin');
       expect(tx.statusLabel, 'to equal', 'Unconfirmed');
       expect(tx.dateLabel, 'to be ok');
       expect(tx.dateTimeLabel, 'to be ok');

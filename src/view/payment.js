@@ -38,8 +38,8 @@ const PaymentView = ({ store, nav, payment }) => (
     <MainContent>
       <Card>
         <FormText style={styles.description}>
-          Paste the Lightning Payment Request or the Groestlcoin Address to which
-          you’re sending.
+          Paste the Lightning Payment Request or the Groestlcoin Address to
+          which you’re sending.
         </FormText>
         <FormStretcher>
           <InputField
@@ -50,8 +50,8 @@ const PaymentView = ({ store, nav, payment }) => (
             onSubmitEditing={() => payment.checkType()}
           />
           <FormSubText style={styles.subText}>
-            Only Lightning Payment Requests or Groestlcoin addresses will work at
-            this time.
+            Only Lightning Payment Requests or Groestlcoin addresses will work
+            at this time.
           </FormSubText>
         </FormStretcher>
         <PillButton onPress={() => payment.checkType()}>Next</PillButton>

@@ -169,7 +169,7 @@ describe('Action Channels Unit Tests', () => {
         commitFee: 15,
       });
       expect(store.pendingChannels[2], 'to satisfy', {
-        timeTilAvailable: '3 days and 5 hours',
+        timeTilAvailable: '0 days and 77 hours',
       });
     });
 

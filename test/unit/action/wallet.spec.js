@@ -727,7 +727,7 @@ describe('Action Wallet Unit Tests', () => {
         .get('/fiat/v1/btc-exchange-rates.json')
         .reply(200, json);
       await wallet.getExchangeRate();
-      expect(store.settings.exchangeRate.usd, 'to be', 0.000200615085853226);
+      expect(store.settings.exchangeRate.usd, 'to be', 9.7575430862464);
       expect(db.save, 'was called once');
     });
 

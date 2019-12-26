@@ -870,7 +870,7 @@ describe('Helpers Unit Tests', () => {
     it('should format blocks to human-readable time', () => {
       const numBlocks = 463;
       const time = helpers.getTimeTilAvailable(numBlocks);
-      expect(time, 'to equal', '3 days and 5 hours');
+      expect(time, 'to equal', '0 days and 77 hours');
     });
 
     it('should error on undefined', () => {
@@ -884,7 +884,7 @@ describe('Helpers Unit Tests', () => {
     it('should work for 1 day and 1 hour', () => {
       const numBlocks = 150;
       const time = helpers.getTimeTilAvailable(numBlocks);
-      expect(time, 'to equal', '1 day and 1 hour');
+      expect(time, 'to equal', '0 days and 25 hours');
     });
 
     it('should work for 0', () => {
