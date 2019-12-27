@@ -28,8 +28,8 @@ To build the desktop app locally follow the instructions below:
 #### Install lnd
 We will use `lnd` to make GRPC calls from the ReactJS environment
 ```
-git clone https://github.com/lightningnetwork/lnd $GOPATH/src/github.com/lightningnetwork/lnd
-cd $GOPATH/src/github.com/lightningnetwork/lnd
+git clone https://github.com/Groestlcoin/lnd $GOPATH/src/github.com/groesltcoin/lnd
+cd $GOPATH/src/github.com/groesltcoin/lnd
 make && make install tags="experimental autopilotrpc signrpc walletrpc chainrpc invoicesrpc routerrpc"
 ```
 If you have any issues with this step, make sure to review the [Preliniaries to installing LND](https://github.com/lightningnetwork/lnd/blob/master/docs/INSTALL.md#preliminaries)
@@ -113,6 +113,6 @@ To run the packaged version of the app e.g. for macOS run:
 ### Lnd data and logs
 Lnd data and logs are written to the following locations in production:
 
-* **Linux:** `~/.config/lightning-app/lnd`
-* **OSX:** `~/Library/Application Support/lightning-app/lnd`
-* **Windows:** `%USERPROFILE%\AppData\Roaming\lightning-app\lnd`
+* **Linux:** `~/.config/lightning-app-grs/lnd`
+* **OSX:** `~/Library/Application Support/lightning-app-grs/lnd`
+* **Windows:** `%USERPROFILE%\AppData\Roaming\lightning-app-grs\lnd`
