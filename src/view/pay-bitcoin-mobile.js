@@ -47,8 +47,8 @@ const PayBitcoinView = ({ store, nav, payment }) => (
     <MainContent>
       <Card>
         <FormText style={styles.description}>
-          You are about to initiate an on-chain payment. It could take 10
-          minutes or more to confirm.
+          You are about to initiate an on-chain payment. It could take 1
+          minute or more to confirm.
         </FormText>
         <FormStretcher>
           <BalanceLabel>

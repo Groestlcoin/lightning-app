@@ -294,17 +294,17 @@ storiesOf('Screens', module)
   .add('Payment Failed (Mobile)', () => (
     <PaymentFailedMobile channel={channel} nav={navMobile} />
   ))
-  .add('Pay Bitcoin', () => (
+  .add('Pay Groestlcoin', () => (
     <PayBitcoin store={store} payment={payment} nav={nav} />
   ))
-  .add('Pay Bitcoin (Mobile)', () => (
+  .add('Pay Groestlcoin (Mobile)', () => (
     <PayBitcoinMobile store={store} payment={payment} nav={navMobile} />
   ))
-  .add('Pay Bitcoin Confirm', () => (
+  .add('Pay Groestlcoin Confirm', () => (
     <PayBitcoinConfirm store={store} payment={payment} nav={nav} />
   ))
-  .add('Pay Bitcoin Done', () => <PayBitcoinDone payment={payment} nav={nav} />)
-  .add('Pay Bitcoin Done (Mobile)', () => (
+  .add('Pay Groestlcoin Done', () => <PayBitcoinDone payment={payment} nav={nav} />)
+  .add('Pay Groestlcoin Done (Mobile)', () => (
     <PayBitcoinDoneMobile payment={payment} nav={navMobile} />
   ))
   .add('Invoice', () => <Invoice store={store} invoice={invoice} nav={nav} />)
