@@ -84,7 +84,7 @@ class FileAction {
 
   get scbExternalDir() {
     const { network } = this._store;
-    return `${this.externalStorageDir}/Lightning/${network}`;
+    return `${this.externalStorageDir}/GRS-Lightning/${network}`;
   }
 
   get scbExternalPath() {
