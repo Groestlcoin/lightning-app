@@ -162,6 +162,16 @@ android {
             }
         }
     }
+    flavorDimensions "network"
+    productFlavors {
+        prod {
+            dimension "network"
+}
+        dev {
+            dimension "network"
+            applicationIdSuffix ".testnet"
+        }
+    }
 }
 
 dependencies {
