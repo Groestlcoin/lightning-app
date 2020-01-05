@@ -20,7 +20,7 @@ export const color = {
   blackDark: '#252F4A',
   blackText: '#4A4A4A',
   greenSig: '#46E80E',
-  orangeSig: '#00A5BD',
+  orangeSig: '#005E78',
   pinkSig: '#F5406E',
   greySig: '#454D64',
   glas: 'rgba(255,255,255,0.13)',
