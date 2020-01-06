@@ -3,7 +3,7 @@ GRS Lightning [![Build Status](https://travis-ci.org/Groestlcoin/lightning-app.s
 
 An easy-to-use cross platform lightning wallet
 
-![Screenshot](https://github.com/Groestlcoin/lightning-app/blob/5f2620d1e99ed1372985fec2063066236e4c16d9/assets/screenshot.png)
+![Screenshot](https://github.com/Groestlcoin/lightning-app/raw/master/assets/screenshot.png)
 
 **N.B. This is still early technology and there’s a risk of losing all of your funds. We recommend not putting in more money than you are willing to lose.**
 
