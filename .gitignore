@@ -34,3 +34,8 @@ mobile/android/app/dev/release/
 mobile/android/app/dev/debug/
 mobile/android/app/prod/release/
 mobile/android/app/prod/debug/
+.project
+.classpath
+.settings/
+*.iml
+
