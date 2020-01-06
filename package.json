@@ -1,6 +1,6 @@
 {
   "name": "lightning-app-grs",
-  "version": "0.5.9-alpha",
+  "version": "0.5.9-alpha-grs",
   "description": "Groestlcoin Lightning Wallet Application",
   "author": "Hash Engineering Solutions",
   "homepage": "./",
